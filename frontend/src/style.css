@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Swiper Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #6C5DD3 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #6C5DD3 !important;
+}
+
+/* Transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Focus Styles */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #6C5DD3;
+}
+
+/* Placeholder Styles */
+::placeholder {
+  color: #6B7280;
+  opacity: 1;
+}
