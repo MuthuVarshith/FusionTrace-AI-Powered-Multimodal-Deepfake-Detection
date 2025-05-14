@@ -48,47 +48,57 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 ```
 
 .
-├── app
-│   ├── **init**.py
-│   ├── audio\_detection.py        # Wav2Vec2-based audio deepfake detection
-│   ├── config.py                 # App settings and environment paths
-│   ├── image\_detection.py        # EfficientNetV2-based image detection
-│   └── main.py                   # Flask backend entrypoint
-├── config.yaml                   # Path to models and configuration values
-├── data
-│   └── test\_data                 # Sample media for testing
-├── models
-│   ├── audio\_model               # Wav2Vec2 model files
+├── app/
+│   ├── __init__.py
+│   ├── audio_detection.py       # Wav2Vec2-based audio deepfake detection
+│   ├── config.py                # App settings and environment paths
+│   ├── image_detection.py       # EfficientNetV2-based image detection
+│   └── main.py                  # FastAPI backend entry point
+│
+├── config.yaml                  # Path to models and configuration values
+│
+├── data/
+│   └── test_data/               # Sample media files (audio/image)
+│
+├── models/
+│   ├── audio_model/             # Wav2Vec2 model files
 │   │   ├── config.json
 │   │   ├── model.safetensors
-│   │   ├── preprocessor\_config.json
-│   │   ├── special\_tokens\_map.json
-│   │   ├── tokenizer\_config.json
+│   │   ├── preprocessor_config.json
+│   │   ├── special_tokens_map.json
+│   │   ├── tokenizer_config.json
 │   │   └── vocab.json
-│   └── image\_model
-│       └── EfficientnetV2\_model.pth  # Pretrained EfficientNetV2 weights
-├── notebook
-│   ├── audio\_detection
-│   │   └── model\_train\_5.0.ipynb  # Audio training (Wav2Vec2)
-│   └── image\_detection
-│       ├── image\_data\_download.ipynb
-│       ├── image\_deepfake\_detection.ipynb
-│       ├── image\_detection\_dataset.py
-│       └── model\_training.py      # Image model training
-├── templates
+│   │
+│   └── image_model/
+│       └── EfficientNetV2_model.pth  # Pretrained EfficientNetV2 weights
+│
+├── notebook/
+│   ├── audio_detection/
+│   │   └── model_train_5.0.ipynb      # Audio model training notebook
+│   │
+│   └── image_detection/
+│       ├── image_data_download.ipynb
+│       ├── image_deepfake_detection.ipynb
+│       ├── image_detection_dataset.py
+│       └── model_training.py
+│
+├── templates/
 │   ├── index.html
 │   ├── upload.html
-│   └── static
-│       ├── css
+│   └── static/
+│       ├── css/
 │       │   └── styles.css
-│       └── js
+│       └── js/
 │           └── script.js
-├── test
+│
+├── test/
 │   ├── deepfakes/
 │   └── real/
-├── pyproject.toml                # Project dependencies
-├── README.md                     # This file
-└── uv.lock                       # Dependency lock file
+│
+├── pyproject.toml               # Python project dependencies
+├── README.md                    # Project documentation
+└── uv.lock                      # Lock file for dependencies
+
 
 ````
 
@@ -99,7 +109,7 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 - Python 3.10+
 - Dependencies from `pyproject.toml`
 - FFmpeg (for audio preprocessing)
-- Pretrained models for both image and audio (included in `models/`)
+- Trained models for both image and audio (included in `models/`)
 
 
 
@@ -108,8 +118,8 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/username/deepfake-detection.git
-cd deepfake-detection
+https://github.com/Akshayredekar07/Multimodal-Deepfake-Detection.git
+cd Multimodal-Deepfake-Detection/backend
 ````
 
 ### 2. Create and Activate Virtual Environment
