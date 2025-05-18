@@ -6,15 +6,23 @@
 
 A robust web-based application for detecting synthetic media (deepfakes) in **images and audio** using state-of-the-art AI models like **EfficientNetV2** and **Wav2Vec2**. The platform offers an intuitive interface for media analysis while maintaining high security and privacy standards.
 
-## Screenshot of Web Application
 
-![Landing Page](images/1.png)
+<!-- ## Screenshot of Web Application -->
+
+<!-- ![Landing Page](images/1.png)
 ![Landing Page](images/2.png)
 ![Landing Page](images/3.png)
 ![Landing Page](images/4.png)
 ![Landing Page](images/5.png)
 ![Landing Page](images/6.png)
-![Landing Page](images/7.png)
+![Landing Page](images/7.png) -->
+
+
+## Live Demo
+
+
+<video controls autoplay muted src="demo.mp4" title="Title"></video>
+
 
 
 ## Key Features
