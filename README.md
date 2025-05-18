@@ -19,9 +19,9 @@ A robust web-based application for detecting synthetic media (deepfakes) in **im
 
 
 ## Live Demo
+## Live Demo
+![Demo](demo.gif)
 
-
-<video controls autoplay muted src="demo.mp4" title="Title"></video>
 
 
 
