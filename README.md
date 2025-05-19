@@ -1,4 +1,3 @@
-
 ## Multimodal Deepfake Detection
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
@@ -6,21 +5,8 @@
 
 A robust web-based application for detecting synthetic media (deepfakes) in **images and audio** using state-of-the-art AI models like **EfficientNetV2** and **Wav2Vec2**. The platform offers an intuitive interface for media analysis while maintaining high security and privacy standards.
 
-
-<!-- ## Screenshot of Web Application -->
-
-<!-- ![Landing Page](images/1.png)
-![Landing Page](images/2.png)
-![Landing Page](images/3.png)
-![Landing Page](images/4.png)
-![Landing Page](images/5.png)
-![Landing Page](images/6.png)
-![Landing Page](images/7.png) -->
-
-
 ## Live Demo
 ![Demo](resources/images/Live_demo.gif)
-
 
 ## Key Features
 
@@ -29,7 +15,6 @@ A robust web-based application for detecting synthetic media (deepfakes) in **im
   - **EfficientNetV2** for image forgery detection
   - **Wav2Vec2** for detecting voice synthesis artifacts in audio
 - **User-Friendly Interface**: Drag-and-drop media upload with instant deepfake detection
-
 
 ## Architecture Overview
 
@@ -46,12 +31,9 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 - **Audio**: Fine-tuned **Wav2Vec2** model optimized for detecting synthetic voices
 - **Batch Processing**: Simultaneous evaluation of multiple media files
 
-
-
 ## Project Structure
 
 ```
-
 .
 ├── app/
 │   ├── __init__.py
@@ -103,11 +85,7 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 ├── pyproject.toml               # Python project dependencies
 ├── README.md                    # Project documentation
 └── uv.lock                      # Lock file for dependencies
-
-
-````
-
-
+```
 
 ## Requirements
 
@@ -116,8 +94,6 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 - FFmpeg (for audio preprocessing)
 - Trained models for both image and audio (included in `models/`)
 
-
-
 ## Installation Guide
 
 ### 1. Clone the Repository
@@ -125,7 +101,7 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 ```bash
 https://github.com/Akshayredekar07/Multimodal-Deepfake-Detection.git
 cd Multimodal-Deepfake-Detection/backend
-````
+```
 
 ### 2. Create and Activate Virtual Environment
 
@@ -156,29 +132,52 @@ Also verify paths in `config.yaml`.
 ### 5. Run the Web App
 
 ```bash
-python -m app.main
+python -m app.main:app
 ```
 
 Visit: [http://localhost:8000](http://localhost:8000)
 
+## Docker Setup
 
+You can also run the application using Docker for a consistent environment.
+
+### 1. Build the Docker Image
+
+Ensure you are in the root directory of the project (where `backend/` is located) and run:
+
+```bash
+docker build -t mdfd-app .
+```
+
+### 2. Run the Docker Container
+
+```bash
+docker compose up -d
+```
+
+### 3. Access the Application
+
+Visit [http://localhost:8000](http://localhost:8000) to use the web app.
+
+### Notes
+
+- The Docker image uses `uvicorn` to run the FastAPI application.
+- Ensure Docker is installed on your system.
+- If you need to persist uploaded data, consider mounting a volume for `/app/data/uploads` (e.g., add `-v ./data/uploads:/app/data/uploads` to the `docker run` command).
 
 ## Usage Instructions
 
 1. **Homepage**: Learn how the platform works
 2. **Upload Media**: Use the upload page to submit JPG/PNG or MP3/WAV files
 3. **Detection Results**:
-
    * Classification: Real or Fake
    * Confidence Score
    * If possible, anomaly visualization
 4. **Security**: Your media is deleted immediately after detection
 
-
-
 ## Development Guide
 
-### Backend (Flask)
+### Backend (FastAPI)
 
 * `app/main.py`: Routes and endpoints
 * `app/image_detection.py`: EfficientNetV2 image classification logic
@@ -196,16 +195,12 @@ Visit: [http://localhost:8000](http://localhost:8000)
 * Audio: `notebook/audio_detection/model_train_5.0.ipynb`
 * Image: `notebook/image_detection/model_training.py`
 
-
-
 ## Testing
 
 Use sample files in the `test/` folder to verify output.
 
 * `test/deepfakes/`: Example fakes
 * `test/real/`: Example genuine files
-
-
 
 ## Contributing
 
@@ -214,13 +209,9 @@ Use sample files in the `test/` folder to verify output.
 3. Commit your changes
 4. Push and submit a PR
 
-
-
 ## License
 
 This project is under the [MIT License](LICENSE).
-
-
 
 ## Contact
 
@@ -228,5 +219,3 @@ For help or suggestions:
 
 * File an issue in the GitHub repo
 * Email the maintainer: `akshayredekar04@gmail.com`
-
-
