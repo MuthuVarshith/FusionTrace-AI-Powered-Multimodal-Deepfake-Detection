@@ -1,7 +1,7 @@
 [project]
 name = "mdfd"
 version = "0.1.0"
-description = "Add your description here"
+description = "Multimodel Deepfake detection"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
