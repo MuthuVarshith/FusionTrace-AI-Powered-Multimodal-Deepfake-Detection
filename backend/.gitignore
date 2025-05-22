@@ -13,3 +13,6 @@ wheels/
 /data/*
 /data/test_data/
 /data/test_data/*
+
+
+backend/app/gradio_app.py
