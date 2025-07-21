@@ -31,6 +31,11 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 - **Audio**: Fine-tuned **Wav2Vec2** model optimized for detecting synthetic voices
 - **Batch Processing**: Simultaneous evaluation of multiple media files
 
+### System Architecture Diagram
+
+![architecture diagram](resources\images\system_architecture.png)
+
+
 ## Project Structure
 
 ```
