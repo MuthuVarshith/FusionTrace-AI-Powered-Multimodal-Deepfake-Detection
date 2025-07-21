@@ -33,7 +33,7 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 
 ### System Architecture Diagram
 
-![architecture diagram](resources\images\system_architecture.png)
+![architecture diagram](resources/images/system_architecture.png)
 
 
 ## Project Structure
