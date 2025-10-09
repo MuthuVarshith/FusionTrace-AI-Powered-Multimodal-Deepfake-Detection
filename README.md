@@ -224,3 +224,11 @@ For help or suggestions:
 
 * File an issue in the GitHub repo
 * Email the maintainer: `akshayredekar04@gmail.com`
+
+---
+
+## Notes about merge
+
+This repository was merged with the FusionTrace repository. The current README.md preserves the local project README and includes content from the remote FusionTrace repository where applicable.
+
+If you maintain both forks, consider reviewing this README and the repository history to ensure all relevant project information was preserved.
