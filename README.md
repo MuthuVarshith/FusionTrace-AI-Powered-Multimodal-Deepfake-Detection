@@ -104,7 +104,7 @@ The application integrates cutting-edge AI models with a clean web-based fronten
 ### 1. Clone the Repository
 
 ```bash
-https://github.com/Akshayredekar07/Multimodal-Deepfake-Detection.git
+https://github.com/MuthuVarshith/FusionTrace-AI-Powered-Multimodal-Deepfake-Detection.git
 cd Multimodal-Deepfake-Detection/backend
 ```
 
@@ -223,7 +223,7 @@ This project is under the [MIT License](LICENSE).
 For help or suggestions:
 
 * File an issue in the GitHub repo
-* Email the maintainer: `akshayredekar04@gmail.com`
+* Email the maintainer: `muthuvarshith290@gmail.com`
 
 ---
 
