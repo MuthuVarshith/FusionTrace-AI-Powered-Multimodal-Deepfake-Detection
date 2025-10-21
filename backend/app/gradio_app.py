@@ -1,17 +1,14 @@
 import gradio as gr
 import os
 import uuid
-from pathlib import Path
 import cv2
 from moviepy.editor import VideoFileClip
 import shutil
 import time
-import tempfile
 from app.audio_detection import predict_audio
 from app.image_detection import detect_image_deepfake
 from app.config import AUDIO_MODEL_PATH, TEST_DATA_DIR, logger
 from transformers import Wav2Vec2Processor, Wav2Vec2ForSequenceClassification
-import torch
 
 # Global list to store temporary file paths for cleanup
 temp_files = []

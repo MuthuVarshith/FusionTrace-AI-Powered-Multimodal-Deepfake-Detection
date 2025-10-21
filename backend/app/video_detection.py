@@ -2,17 +2,11 @@
 Video deepfake detection module with frame-by-frame analysis and temporal consistency.
 """
 
-import torch
-import torch.nn as nn
 import cv2
 import numpy as np
 from PIL import Image
 import os
-import logging
-from typing import Dict, List, Tuple, Optional
-from pathlib import Path
-import tempfile
-import shutil
+from typing import Dict, List, Optional
 from .image_detection import detect_image_deepfake
 from .audio_detection import predict_audio
 from .enhanced_image_detection import detect_enhanced_image

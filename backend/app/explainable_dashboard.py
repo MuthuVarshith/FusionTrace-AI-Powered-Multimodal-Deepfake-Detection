@@ -3,12 +3,10 @@ Explainable AI dashboard for deepfake detection analysis.
 Provides detailed insights into model decisions and analysis results.
 """
 
-import json
 import numpy as np
-from typing import Dict, List, Any, Optional
+from typing import Dict, List
 from datetime import datetime
 import logging
-from pathlib import Path
 
 logger = logging.getLogger(__name__)
 

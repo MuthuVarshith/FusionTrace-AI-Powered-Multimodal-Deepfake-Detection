@@ -4,16 +4,13 @@ Includes intelligent weighted fusion, late fusion classifier, and enhanced expla
 """
 
 import numpy as np
-import pandas as pd
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Tuple
 import logging
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score
 import joblib
 import os
-from pathlib import Path
 
 logger = logging.getLogger(__name__)
 

@@ -6,18 +6,12 @@ Includes Grad-CAM++ heatmaps, confidence timelines, side-by-side visualization, 
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-from matplotlib.colors import LinearSegmentedColormap
-import seaborn as sns
 import plotly.graph_objects as go
-import plotly.express as px
-from plotly.subplots import make_subplots
 import base64
 import io
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List
 import logging
-from PIL import Image, ImageDraw, ImageFont
-import json
+from PIL import Image
 
 logger = logging.getLogger(__name__)
 

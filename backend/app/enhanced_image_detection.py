@@ -3,19 +3,14 @@ Enhanced image detection module with Grad-CAM++, fake intensity, and forgery typ
 """
 
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
-from torch.autograd import Variable
 import numpy as np
 from PIL import Image
 import cv2
 from torchvision import transforms
-from timm import create_model
 import logging
-from typing import Dict, Tuple, List
-import matplotlib.pyplot as plt
+from typing import Dict
 import matplotlib.cm as cm
-from matplotlib.colors import LinearSegmentedColormap
 import io
 import base64
 from .config import IMAGE_MODEL_PATH

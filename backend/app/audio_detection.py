@@ -7,7 +7,6 @@ from pydub import AudioSegment
 import shutil
 import soundfile as sf
 import tempfile
-from transformers.models.wav2vec2  import Wav2Vec2Processor, Wav2Vec2ForSequenceClassification
 from .config import logger, TEST_DATA_DIR
 
 
